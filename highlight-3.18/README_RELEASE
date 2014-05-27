@@ -1,0 +1,74 @@
+-------------------------------------------------------------------------------
+---  HIGHLIGHT IMPORTANT RELEASE AND PACKAGING INFORMATION --- October 2013 ---
+-------------------------------------------------------------------------------
+
+TEST CASES
+----------
+
+highlight --print-config
+
+This will print the config file search paths and compilation options.
+
+
+To test syntax definitions, run
+
+highlight --list-scripts=langs
+
+This command compiles all syntax scripts.
+
+highlight --list-scripts=themes
+highlight --list-scripts=plugins
+
+These commands show installed files.
+
+
+To quickly test highlighting on the command line, type:
+highlight -ISc
+Now type some C code and hit CTRL+D to quit.
+
+Add --verbose to print additional syntax parsing information.
+
+
+THIRD PARTY COMPATIBILITY
+-------------------------
+
+The following options are used in third party applications:
+
+  --input, -i
+  --output, -o
+  --encoding, -u
+  --font
+  --font-size
+  --force
+  --line-numbers, -l
+  --replace-tabs, -t
+  --syntax
+  --out-format
+  --include-style
+  --inline-css
+  --style
+  --failsafe
+  --validate-input
+
+The following themes are used in third party applications:
+  - bclear (Evolution)
+
+The following platform dependent classes are used in SWIG scripts (ikiwiki):
+  - DataDir
+
+
+LUA 5.2 MIGRATION
+-----------------
+  
+See src/makefile how to include Lua5.1 OR Lua5.2.
+
+
+SO-LIB VERSION
+--------------
+
+Increase SO_VERSION in src/makefile.
+  
+
+See the makefiles and INSTALL for more packaging information.
+
+ 
