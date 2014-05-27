@@ -1,3 +1,10 @@
+2.0.3:
+	* Added pre-compiled highlight-3.18
+	* Added support for more langs incl. files without extension (README, LICENSE, etc...)
+	* Update project to Xcode 5.1.1
+	* Changed files: Info.plist, colorize.sh, Common.m
+    * Changed script: Build Phases > Install highlight
+
 2.0.2:
     * Modified ReadMe.txt to include the latest info on the Xcode 3.2 conflict
     * Include a link to Andre Simon's page with previews of color styles
